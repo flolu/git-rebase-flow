@@ -1,1 +1,1 @@
-export const projectName = "git-rebase-flow";
+export const name = "git-rebase-flow";
