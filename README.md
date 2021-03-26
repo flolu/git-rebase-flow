@@ -4,6 +4,8 @@ Do this once
 
 ```
 git config --global core.editor "code --wait"
+git config --global user.name "username"
+git config --global user.email "email@example.com"
 git clone https://github.com/flolu/git-rebase-flow
 ```
 
