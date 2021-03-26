@@ -1,4 +1,4 @@
-# Git Rebase Flow
+# Git Rebase Workflow
 
 Do this once
 
@@ -25,17 +25,24 @@ git commit -m "refactor: finalize my gorgeous work"
 ## 3. Synchronize `origin/master`
 
 ```
-git pull origin master
+git checkout master
+git pull
 ```
 
 ## 4. Rebase against local `master`
 
 ```
 git checkout some-cool-feature
-git rebase master
+git rebase --interactive master
 ```
 
-You might need to solve some conflicts when rebasing.
+You might need to solve some conflicts when rebasing:
+
+```
+# solve conflicting files
+git add .
+git rebase --continue
+```
 
 ## 5. Push feature branch to remote
 
