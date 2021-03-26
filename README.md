@@ -1,13 +1,27 @@
-# Git Rebase Workflow
+# Do this once
 
-Do this once
+Configure GIT
 
 ```
 git config --global core.editor "code --wait"
 git config --global user.name "username"
 git config --global user.email "email@example.com"
+```
+
+Follow [this](https://docs.github.com/en/github/authenticating-to-github/about-commit-signature-verification#gpg-commit-signature-verification) signature verification guide and then run:
+
+```
+git config --global user.signingKey <YOUR_KEY>
+git config --global commit.gpgSign true
+```
+
+Clone the repository
+
+```
 git clone https://github.com/flolu/git-rebase-flow
 ```
+
+# Git Rebase Workflow
 
 ## 1. Synchronize `origin/master`
 
